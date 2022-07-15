@@ -1,0 +1,894 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,
+body{
+    font-size: 13px;
+    height: 100%;
+    font-weight: 400;
+    font-family: "Open Sans";
+    color: #868686;
+    cursor: default;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+/* Container-------------------------------------- */
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header----------------------------------------- */
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.header__nav__link {
+    font-size: 13.5px;
+    font-family: Lato;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #868686;
+
+    transition: .2s;
+}
+
+.header__nav__link:hover{
+    background-color: #ffbb42;
+    color: #fff;
+}
+
+/* Intro----------------------------------------- */
+
+.intro {
+    width: 100%;
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614365622_24-p-svetlo-goluboi-tsvet-fon-27.jpg) no-repeat center;
+    background-size: cover;
+    height: 648px;
+    min-width: 675px;
+    margin-bottom: 67px;
+}
+
+.intro__inner {
+    padding: 110px 0px 65px 0px;
+    text-align: center;
+}
+
+.intro__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.intro__suptitle {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.intro__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.intro__input{
+    height: 100%;
+    width: 25%;
+    margin-right: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: "FontAwesome";
+    outline: none;
+
+    transition: .2s;
+}
+
+.intro__input:focus{
+   box-shadow: 0px 13px 19px rgb(0, 0, 0, 0.3); 
+}
+
+.intro__btn{
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #ffbb42;
+    padding: 13px 20px;
+    color: #fff;
+    transition: .3s;
+}
+
+.intro__btn:hover{
+    font-size: 15px;
+}
+
+.intro__laptop {
+    position: relative;
+    background: url(/images/header/karkas.png) no-repeat center;
+    background-size: 650px;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px 35px 0px;
+    margin-top: 20px;
+}
+
+.intro__laptop__image{
+    margin: -40px 0px 0px 0px;
+    padding: 40px 95px 40px 100px;
+    
+}
+
+/* Слайдер------------------------------------------ */
+
+.slick-track{
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+/* Слайдер */
+.slick-slider{
+    text-align: center;
+}
+
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 46.6%;
+    color: #fff;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0 5px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    border: 1px solid #1ca8dd;
+    cursor: default;
+}
+/* Элемент точки */
+.slick-dots button{
+    font-size: 0;
+    width: 16px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #dedfe0;
+    cursor: pointer;
+}
+
+
+/* Services----------------------------------------- */
+
+.services {
+    width: 100%;
+    height: 720px;
+    min-width: 675px;
+    margin-top: 67px;
+}
+
+.services__inner {
+    margin: 135px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.services__title {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    color: #000;
+}
+
+.services__suptitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000;
+}
+
+.services__section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.services__section__block{
+    width: 50%;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.services__section__block.services__section__block__pad{
+    padding-left: 28px;
+}
+
+.services__section__title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services__section__suptitle{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.services__section__icon{
+    margin-right: 35px;
+    font-family: FontAwesome;
+    font-size: 50px;
+    color: #8db1d5;
+    min-width: 50px;
+    transition: .3s;
+}
+
+.services__section__icon:hover{
+    color: #ffbb42;
+}
+
+.services__section__info{
+    max-width: 450px;
+}
+
+.services__section__icon.shapka{
+    font-size: 45px;
+}
+
+.services__section__icon.dollar{
+    text-align: center;
+}
+
+/* AboutUs-------------------------------------- */
+
+.aboutus {
+    width: 100%;
+    min-width: 700px;
+}
+
+.aboutus__inner {
+    display: flex;
+    background-color: #ffbb42;
+}
+
+.aboutus__image {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.aboutus__image img {
+    width: 100%;
+    height: 100%;
+    max-width: 840px;
+}
+
+.aboutus__info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.aboutus__info__info {
+    max-width: 480px;
+    color: #fff;
+}
+
+.aboutus__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.aboutus__suptitle {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    line-height: 24px;
+}
+
+.aboutus__btn__link {
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Lato;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: #fff;
+
+    transition: .3s;
+}
+
+.aboutus__btn__link:hover{
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+/* Price----------------------------------------- */
+
+.price {
+    background-color: #e7edf3;
+    padding: 130px 0px 160px 0px;
+    width: 100%;
+    min-width: 700px;
+}
+
+.price__inner {
+    width: 100%;
+    text-align: center;
+}
+
+.price__title {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #394b50;
+}
+
+.price__suptitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #75888d;
+}
+/* PriceBlock--------------------------------------- */
+
+.price__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    font-family: Lato;
+}
+
+.price__block {
+    width: 32.4%;
+    border: 1px solid rgb(201, 200, 200);
+    padding: 50px 0;
+    text-transform: uppercase;
+    color: #a3aab1;
+    background-color: #fff;
+}
+
+.price__block.price__block-style{
+    background-color: #8db1d5;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    width: 35%;
+    color: #fff;
+    border: 0;
+}
+
+.price__block__title{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.price__block__titlestyle{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.price__block__price {
+    font-weight: 400;
+    font-size: 60px;
+    color: #ffbb42;
+}
+
+.price__block__pricestyle{
+    font-weight: 400;
+    font-size: 60px;
+    color: #fff;
+}
+
+.price__block__supprice {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.price__block__accouts {
+    font-size: 13.5px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.price__block__accouts.color{
+    color: #c2e1ff;
+}
+
+.price__block__accouts::before{
+    content: '';
+    display: block;
+    height: 1px;
+    max-width: 85%;
+    margin: 15px auto;
+    background: #e2e9f0;
+    
+}
+
+.price__block__accouts::after{
+    content: '';
+    display: block;
+    height: 1px;
+    max-width: 85%;
+    margin: 15px auto;
+    background: #e2e9f0;
+}
+
+.price__block__hours {
+    font-size: 13.5px;
+    font-weight: 400;
+}
+
+.price__block__hours.color{
+    color: #c2e1ff;
+}
+
+.price__block__clouds {
+    font-size: 13.5px;
+    font-weight: 400;
+    padding-bottom: 45px;
+}
+
+.price__block__clouds::before{
+    content: '';
+    display: block;
+    height: 1px;
+    max-width: 85%;
+    margin: 15px auto;
+    background: #e2e9f0;
+}
+
+.price__block__clouds.color{
+    color: #c2e1ff;
+}
+
+.price__block__btn__link {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: #fff;
+    background-color: #ffbb42;
+    transition: .3s;
+}
+
+.price__block__btn__link:hover {
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-size: 15px;
+}
+
+/* HowIt------------------------------------------- */
+
+.howit {
+    padding: 135px 0px 150px 0px;
+    width: 100%;
+    min-width: 700px;
+}
+
+.howit__inner {
+    text-align: center;
+}
+
+.howit__title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #394b50;
+    text-transform: uppercase;
+}
+
+.howit__suptitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #394b50;
+}
+
+.howit__step_images{
+    margin-top: -100px;
+    display: flex;
+    width: 14%;
+}
+
+.howit__step_images.howit__step__images-bottom{
+    margin-top: 80px;
+}
+
+.howit__images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1025px;
+
+}
+
+.hotline__img-sides{
+   margin-top: 17px;
+    height: 12px;
+}
+
+.hotline__img-sidescenter{
+    transform: rotate(5deg);
+   margin-top: -7px;
+    height: 12px;
+}
+
+.howit__step__img {
+    width: 14%;
+    font-family: FontAwesome;
+    font-size: 72px;
+    font-weight: 400;
+    color: #709dca;
+
+}
+
+.howit__steps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.howit__step {
+    width: 25%;
+    padding: 0 35px;
+}
+
+.howit__step__title {
+    font-weight: 700;
+    font-family: Lato;
+    font-size: 20px;
+    color: #394b50;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.howit__step__suptitle {
+    font-size: 13px;
+    font-weight: 400;
+    color: #959595;
+}
+
+.howit__btn {
+    margin-top: 90px;
+}
+
+.howit__btn__link{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffbb42;
+    
+    padding: 15px 25px;
+
+    transition: .3s;
+}
+
+.howit__btn__link:hover{
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-size: 15px;
+}
+
+/* HappyClients------------------------------------------- */
+
+.happyclients {
+    background-color: #ffbb42;
+    width: 100%;
+    padding: 95px 0px 105px 0px;
+    min-width: 700px;
+}
+
+.happyclients__inner {
+    text-align: center;
+    width: 100%;
+}
+
+.happyclients__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.happyclients__suptitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+}
+
+.happyclients__clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.happyclients__client {
+    width: 49%;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 45px 50px 50px 30px;
+    
+}
+
+.happyclients__client__info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.happyclients__client__text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7b7b7b;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.happyclients__client__text__quote{
+    font-family: FontAwesome;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.happyclients__client__text__quote2{
+    font-family: FontAwesome;
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.happyclients__client__auctor {
+    color: #f78948;
+    text-transform: uppercase;
+}
+
+.happyclients__client__auctor__color {
+    color: #99a9ae;
+}
+
+/* News--------------------------------------------------- */
+
+.news {
+    width: 100%;
+    min-width: 700px;
+    padding: 95px 0px 105px 0px;
+}
+
+.news_inner {
+    text-align: center;
+    width: 100%;
+}
+
+.news__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+}
+
+.news__suptitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #394b50;
+    width: 100%;
+}
+
+.news__form {
+    display: flex;
+    justify-content: center;
+    max-width: 935px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+.news__form__input-text {
+    height: 100%;
+    width: 30%;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: "FontAwesome";
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.news__form__input-email {
+    height: 100%;
+    width: 40%;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: "FontAwesome";
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.news__form__btn {
+    width: 20%;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffbb42;
+    padding: 15px 25px;
+}
+
+.news__worldmap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: url(/images/news/worldmap.png) no-repeat center;
+    padding-top: 80px;
+}
+
+
+
+.news__worldmap__adress {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 280px;
+    padding: 60px 60px;
+    background-color: #394b50;
+    border-radius: 50%;
+}
+
+.news__worldmap__adress::after{
+    content: '';
+    position: absolute;
+    bottom: -25px; left: 47%;
+    border: 12px solid transparent;
+    border-top: 20px solid #394b50;
+}
+
+
+
+.news__worldmap__adress__title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.news__worldmap__adress__suptitle {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+}
+
+.news__worldmap__adress__suptitle__email{
+    color: #ffbb42;
+}
+
+.news__worldmap__logo{
+    margin-bottom: 220px;
+}
+
+.news__worldmap__adress__info{
+    max-width: 140px;
+}
+
+/* Footer-------------------------------------------- */
+
+.footer {
+    width: 100%;
+    min-width: 700px;
+}
+
+.footer__inner {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.footer__inner::before{
+    content: '';
+    display: block;
+    width: 100%;
+    border: 0.1px solid #e3e7ec;
+}
+
+.footer__nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer__nav__link {
+    font-size: 13.5px;
+    font-family: Lato;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #868686;
+
+    transition: .2s;
+}
+
+.footer__nav__link:hover{
+    background-color: #ffbb42;
+    color: #fff;
+}
+
+.footer__number {
+    font-family: FontAwesome;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: FontAwesome;
+    margin-top: 15px;
+    word-spacing: 10px;
+}
+
+.footer__social__sol {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: FontAwesome;
+    color: #709dca;
+    transition: .3s;
+}
+
+.footer__social__sol:hover {
+    color: #ffbb42;
+}
+
+.designerpidor{
+    background-color: #709dca;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    min-width: 700px;
+}
